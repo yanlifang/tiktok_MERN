@@ -17,8 +17,8 @@ const port = process.env.PORT || 8100;
 //middlewares 
 app.use(express.json());
 app.use((req, res, next)=>{
-    res.setHeaders('Access-Control-ALlow-Origin', '*'),
-    res.setHeaders('Access-Control-Allow-Headers','*'),
+    res.setHeader('Access-Control-ALlow-Origin', '*'),
+    res.setHeader('Access-Control-Allow-Headers','*'),
     next();
 });
 //db config 
