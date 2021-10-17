@@ -1,7 +1,5 @@
 import mongoose from 'mongoose';
 
-
-
 const tiktokSchema = mongoose.Schema({
     url: String,
     channel: String,
@@ -13,5 +11,6 @@ const tiktokSchema = mongoose.Schema({
 });
 
 //Collection inside the database
-export default mongoose.model('tiktokVideos',
-    tiktokSchema);
+export default mongoose.model('tiktokVideos', tiktokSchema);
+
+//modules.exports = moogoose.model('tiktokVideos', tiktokSchema);

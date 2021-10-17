@@ -1,8 +1,12 @@
-import express from "express";
+import express from 'express';
 import mongoose from 'mongoose';
-import data from  './data.js';
-import Videos from './dbModel.js';
+import data from "./data.js";
+import Videos from "./dbModel.js";
 
+//const express = require("express");
+//const mongoose = require("mongoose");
+//const data = require("./data.js");
+//const Videos = require("./dbModel.js")[]
 
 
 
