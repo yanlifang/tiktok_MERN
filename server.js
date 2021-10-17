@@ -8,11 +8,15 @@ import Videos from './dbModel.js';
 
 //app config
 const app = express();
-const port = 8100;
+const port = process.env.PORT || 8100;
 
 //middlewares 
 app.use(express.json());
-
+app.use((req, res, next)=>{
+    res.setHeaders('Access-Control-ALlow-Origin', '*'),
+    res.setHeaders('Access-Control-Allow-Headers','*'),
+    next();
+});
 //db config 
 
 const connection_url = 'mongodb+srv://admin:GQo4DQ8TnVof0wiM@cluster0.5lc1d.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
