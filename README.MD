@@ -35,3 +35,21 @@ Begin using MongoDB.
 Start a mongosh session on the same host machine as the mongod. You can run mongosh without any command-line options to connect to a mongod that is running on your localhost with default port 27017.
 
 mongosh
+
+# noSQL -> mongoDB
+
+Collection -> [documents] -> Collection -> [...]
+
+Collection like a table of SQL
+
+Collection can have multiple documents
+
+# Reference https://www.youtube.com/watch?v=g8yGxDMyGiE&t=3640s
+
+MongoDB: 2:30min
+
+# deploy application to Heroku
+
+https://tiktok-mern-backend-ly.herokuapp.com
+https://tiktok-mern-backend-ly.herokuapp.com/v1/posts
+https://tiktok-mern-backend-ly.herokuapp.com/v2/posts
